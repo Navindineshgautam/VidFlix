@@ -1,0 +1,41 @@
+* {
+    border: 1px solid black;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-child-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar-left-container {
+    flex-grow: 1
+}
+
+#navbar-right-container {
+    flex-grow: 2;
+}
+
+.navbar-child {
+    flex-grow: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    #navbar-left-container {
+        max-width: 20%;
+    }
+
+    #navbar-right-container {
+        max-width: 40%;
+    }
+}
