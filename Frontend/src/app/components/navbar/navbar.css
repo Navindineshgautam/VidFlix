@@ -24,6 +24,7 @@ nav {
 .navbar-child {
     flex-grow: 1;
     text-align: center;
+    padding: 5px;
 }
 
 @media screen and (max-width: 767px) {

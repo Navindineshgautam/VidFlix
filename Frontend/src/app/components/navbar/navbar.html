@@ -1,11 +1,13 @@
 <nav>
     <div id="navbar-left-container" class="navbar-child-container">
-        <div id="Menu" class="navbar-child">Menu Button</div>
-        <div id="Vidflex" class="navbar-child">Vidflix</div>
+        @if (!getIsDesktop()) {
+            <div id="menu" class="navbar-child">Menu Button</div>
+        }
+        <div id="vidflex" class="navbar-child">Vidflix</div>
     </div>
     <div id="navbar-right-container" class="navbar-child-container">
-        <div id="Search" class="navbar-child">Search</div>
-        <div id="Create" class="navbar-child">Create</div>
-        <div id="Account" class="navbar-child">Account</div>
+        <div id="search" class="navbar-child">Search</div>
+        <div id="create" class="navbar-child">Create</div>
+        <div id="account" class="navbar-child">Account</div>
     </div>
 </nav>
