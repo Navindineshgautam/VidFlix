@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 import { Navbar } from './components/navbar/navbar';
 import { Content } from './components/content/content';
+
+import { WindowService } from './services/window/window.service';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +12,10 @@ import { Content } from './components/content/content';
   imports: [Navbar, Content]
 })
 export class App {
+  public constructor(private windowService: WindowService) {}
 
+  @HostListener("window:resize", ["$event"])
+  onResize(event: Event) {
+    this.windowService.checkScreenSize()
+  }
 }

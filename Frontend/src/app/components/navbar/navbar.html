@@ -1,6 +1,6 @@
-<nav [class.mobile-view]="getIsMobile()">
+<nav [class.mobile-view]="windowService.isMobile()">
     <div id="navbar-left-container" class="navbar-child-container">
-        @if (getIsMobile()) {
+        @if (windowService.isMobile()) {
             <div id="menu" class="navbar-child">Menu Button</div>
         }
         <div id="vidflex" class="navbar-child">Vidflix</div>

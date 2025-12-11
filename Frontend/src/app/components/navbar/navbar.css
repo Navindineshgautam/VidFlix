@@ -32,9 +32,9 @@ nav.mobile-view {
 }
 
 nav.mobile-view #navbar-left-container {
-    max-width: 20%;
+    max-width: 20vw;
 }
 
 nav.mobile-view #navbar-right-container {
-    max-width: 40%;
+    max-width: 40vw;
 }

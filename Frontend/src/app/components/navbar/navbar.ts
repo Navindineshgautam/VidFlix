@@ -1,29 +1,12 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 
-import { MAX_MOBILE_WIDTH } from '../../constants/window-constants';
+import { WindowService } from '../../services/window/window.service';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.html',
-  styleUrl: './navbar.css',
+  styleUrl: './navbar.css'
 })
 export class Navbar {
-  private isMobile: boolean = false;
-
-  private checkScreenSize(): void {
-    this.isMobile = window.innerWidth < MAX_MOBILE_WIDTH;
-  }
-
-  public constructor() {
-    this.checkScreenSize()
-  }
-
-  public getIsMobile(): boolean {
-    return this.isMobile;
-  }
-
-  @HostListener("window:resize", ["$event"])
-  onResize(event: Event) {
-    this.checkScreenSize()
-  }
+  public constructor(public windowService: WindowService) {}
 }
