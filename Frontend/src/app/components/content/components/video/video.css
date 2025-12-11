@@ -1,0 +1,15 @@
+#video-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 30vw;
+    height: 100px;
+}
+
+.widescreen-view #video-container {
+    width: 20vw;
+}
+
+.mobile-view #video-container {
+    width: 300px;
+}
