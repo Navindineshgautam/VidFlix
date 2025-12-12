@@ -1,1 +1,5 @@
-Content
+<div id="video-array" [class.desktop-view]="windowService.isDesktop" [class.mobile-view]="windowService.isMobile" [class.widescreen-view]="windowService.isWideScreen">
+    @for (dummyVideo of dummyVideos; track dummyVideo) {
+        <app-video></app-video>
+    }
+</div>

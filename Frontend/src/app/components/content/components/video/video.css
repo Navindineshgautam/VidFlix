@@ -2,14 +2,18 @@
     display: flex;
     flex-direction: column;
 
-    width: 30vw;
-    height: 100px;
+    aspect-ratio: 16 / 9;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.widescreen-view #video-container {
-    width: 20vw;
+video {
+    flex-grow: 2;
+    border: 1px solid green;
 }
 
-.mobile-view #video-container {
-    width: 300px;
+#video-information {
+    flex-grow: 1;
+    border: 1px solid yellow;
 }
