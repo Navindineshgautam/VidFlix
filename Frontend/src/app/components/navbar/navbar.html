@@ -7,7 +7,9 @@
     </div>
     <div id="navbar-right-container" class="navbar-child-container">
         <div id="search" class="navbar-child">Search</div>
-        <div id="create" class="navbar-child">Create</div>
+        @if (!windowService.isMobile) {
+            <div id="create" class="navbar-child">Create</div>
+        }
         <div id="account" class="navbar-child">Account</div>
     </div>
 </nav>

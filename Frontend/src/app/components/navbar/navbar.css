@@ -1,7 +1,3 @@
-* {
-    border: 1px solid black;
-}
-
 nav {
     height: 70px;
     display: flex;
@@ -25,6 +21,7 @@ nav {
     flex-grow: 1;
     text-align: center;
     padding: 5px;
+    border: 1px solid black;
 }
 
 nav.mobile-view {
