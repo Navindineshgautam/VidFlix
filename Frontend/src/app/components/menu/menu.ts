@@ -24,4 +24,8 @@ export class Menu {
   public get isMenuOpen(): boolean {
     return this.menuOpen;
   }
+
+  public closeOnClick(): void {
+    this.appDatashareService.menuButtonClickEvent();
+  }
 }
