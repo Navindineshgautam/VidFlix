@@ -1,0 +1,39 @@
+* {
+    border: 1px solid black;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    
+    min-width: 150px;
+    max-width: 300px;
+    width: 30%;
+    height: 100%;
+}
+
+#menu.open {
+    animation: menu-open-animation 0.8s ease-out 0s 1;
+}
+
+#menu.close {
+    animation: menu-close-animation 0.8s ease-in 0s 1;
+}
+
+@keyframes menu-open-animation {
+    from {
+        left: -30%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes menu-close-animation {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -30%;
+    }
+}

@@ -1,4 +1,7 @@
 <div id="container">
-  <app-navbar></app-navbar>
-  <app-content></app-content>
+  <app-navbar />
+  <app-content />
+  @if (windowService.isMobile) {
+    <app-menu />
+  }
 </div>
